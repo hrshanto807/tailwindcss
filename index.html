@@ -12,27 +12,27 @@
     
 
     <title>tailwind project</title>
-</head>
+</head> 
 <body>
    <header>
-    <nav class="relative container mx-auto p-6 text-white">
+    <nav class="relative container text-white">
         <!-- flex container -->
         <div class="lg:flex items-center justify-between">
             <!-- logo -->
-            <div class="pt-4 flex gap-3">
+            <div class=" ms-12 pt-12 flex gap-3">
                 <img src="img/header-logo.png" alt="">
-                <h2 class="text-white text-4xl pt-5 font-bold">BLUEREX</h2>
+                <h2 class="text-white text-4xl pt-5 font-bold font-sans tracking-widest">BLUEREX</h2>
             </div>
             <!-- MENU -->
-            <div class="flex space-x-8">
-                <a class="hover:text-red-400 hover:bg-lime-500 hover:px-5 hover:rounded-full px-3 pt-5" href="">Home</a>
-                <a class="hover:text-red-400 hover:bg-lime-500 hover:px-5 hover:rounded-full px-3 pt-5" href="">About</a>
-                <a class="hover:text-red-400 hover:bg-lime-500 hover:px-5 hover:rounded-full px-3 pt-5" href="">Fetures</a>
-                <a class="hover:text-red-400 hover:bg-lime-500 hover:px-5 hover:rounded-full px-3 pt-5" href="">Product</a>
-                <a class="hover:text-red-400 hover:bg-lime-500 hover:px-5 hover:rounded-full px-3 pt-5" href="">Reviews</a>
-                <a class="hover:text-red-400 hover:bg-lime-500 hover:px-5 hover:rounded-full px-3 pt-5" href="">Faq</a>
-                <a class="hover:text-red-400 hover:bg-lime-500 hover:px-5 hover:rounded-full px-3 pt-5" href="">Contact</a>
-                <a class="hover:text-red-400 hover:bg-lime-500 hover:px-5 hover:rounded-full px-3 pt-5" href=""><i class="fa-solid fa-bars  p-3 pt-0 text-2xl"></i></div></a>         
+            <div class="flex space-x-8 primary-menu ">
+                <a class="px-3 pt-20 text-lg tracking-widest" href="">Home</a>
+                <a class=" px-3 pt-20 text-lg tracking-widest" href="">About</a>
+                <a class=" px-3 pt-20 text-lg tracking-widest" href="">Fetures</a>
+                <a class=" px-3 pt-20 text-lg tracking-widest" href="">Product</a>
+                <a class=" px-3 pt-20 text-lg tracking-widest" href="">Reviews</a>
+                <a class=" px-3 pt-20 text-lg tracking-widest" href="">Faq</a>
+                <a class=" px-3 pt-20 text-lg tracking-widest" href="">Contact</a>
+                <a class=" px-3 pt-20 text-lgtracking-widest" href=""><i class="fa-solid fa-bars  p-3 pt-0 text-2xl"></i></div></a>         
         </div>
     </nav>
    </header>
@@ -40,16 +40,21 @@
 
    <main>
     <section class="creative-area-full">
-        <div class="creative-area bg-pink" style="background-image: url(img/heading-bg--1.jpg); margin-top: -126px;">
+        <div class="creative-area bg-pink bg-cover bg-no-repeat" style="background-image: url(img/heading-bg--1.jpg); margin-top: -126px;">
             <div class="containar">
                 <div class="creative-content-area flex flex-col md:flex-row sm:flex-row">
-                    <div class="creative-area-left">
-                        <h3>We are the best creative agency</h3>
-                        <h2>We turn creative ideas into your business.</h2>
-                        <p>Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.</p>
+                    <div class="creative-area-left pt-72 ps-40 text-white">
+                        <h3 class="italic text-4xl font-mono mb-11 px-20">We are the best creative agency</h3>
+                        <h2 class="font-sans text-6xl mb-14 px-20">We turn creative ideas into your business.</h2>
+                        <p class="font-serif text-lg px-20 pb-10">Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed<br> sodales enim ut rhoncus lorem ipsum ese terds.</p>
+                        <div class="btn px-20">
+                            <button class="btn-pink uppercase">our story</button>                            
+                            <button class="btn-purple uppercase">read more</button>                            
+                        </div>
                     </div>
-                    <div class="creative-content-area-right pt-40">
-                        <img src="img/main-man.png" alt="">
+                    
+                    <div class="creative-content-area-right pt-40 pe-40">
+                        <img src="img/main-man.png" class="pe-20 h-screen" alt="">
                     </div>
                 </div>
             </div>
