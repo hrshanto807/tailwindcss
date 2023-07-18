@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,57 +10,118 @@
     <link rel="stylesheet" href="amar.css">
     <link rel="stylesheet" href="responsive-mb.css">
     <link rel="stylesheet" href="responsive-tb.css">
-    
+
 
     <title>tailwind project</title>
-</head> 
-<body>
-   <header>
-    <nav class="relative container text-white">
-        <!-- flex container -->
-        <div class="lg:flex items-center justify-between">
-            <!-- logo -->
-            <div class=" ms-12 pt-12 flex gap-3">
-                <img src="img/header-logo.png" alt="">
-                <h2 class="text-white text-4xl pt-5 font-bold font-sans tracking-widest">BLUEREX</h2>
-            </div>
-            <!-- MENU -->
-            <div class="flex space-x-8 primary-menu ">
-                <a class="px-3 pt-20 text-lg tracking-widest" href="">Home</a>
-                <a class=" px-3 pt-20 text-lg tracking-widest" href="">About</a>
-                <a class=" px-3 pt-20 text-lg tracking-widest" href="">Fetures</a>
-                <a class=" px-3 pt-20 text-lg tracking-widest" href="">Product</a>
-                <a class=" px-3 pt-20 text-lg tracking-widest" href="">Reviews</a>
-                <a class=" px-3 pt-20 text-lg tracking-widest" href="">Faq</a>
-                <a class=" px-3 pt-20 text-lg tracking-widest" href="">Contact</a>
-                <a class=" px-3 pt-20 text-lgtracking-widest" href=""><i class="fa-solid fa-bars  p-3 pt-0 text-2xl"></i></div></a>         
-        </div>
-    </nav>
-   </header>
-   <!-- header end -->
+</head>
 
-   <main>
-    <section class="creative-area-full">
-        <div class="creative-area bg-pink bg-cover bg-no-repeat" style="background-image: url(img/heading-bg--1.jpg); margin-top: -126px;">
-            <div class="containar">
-                <div class="creative-content-area flex flex-col md:flex-row sm:flex-row">
-                    <div class="creative-area-left pt-72 ps-40 text-white">
-                        <h3 class="italic text-4xl font-mono mb-11 px-20">We are the best creative agency</h3>
-                        <h2 class="font-sans text-6xl mb-14 px-20">We turn creative ideas into your business.</h2>
-                        <p class="font-serif text-lg px-20 pb-10">Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed<br> sodales enim ut rhoncus lorem ipsum ese terds.</p>
-                        <div class="btn px-20">
-                            <button class="btn-pink uppercase">our story</button>                            
-                            <button class="btn-purple uppercase">read more</button>                            
+<body>
+    <header>
+        <nav class="relative container text-white">
+            <!-- flex container -->
+            <div class="lg:flex items-center justify-between">
+                <!-- logo -->
+                <div class=" ms-12 pt-12 flex gap-3">
+                    <img src="img/header-logo.png" alt="">
+                    <h2 class="text-white text-4xl pt-5 font-bold font-sans tracking-widest">BLUEREX</h2>
+                </div>
+                <!-- MENU -->
+                <div class="flex space-x-8 primary-menu ">
+                    <a class="px-3 pt-20 text-lg tracking-widest" href="">Home</a>
+                    <a class=" px-3 pt-20 text-lg tracking-widest" href="">About</a>
+                    <a class=" px-3 pt-20 text-lg tracking-widest" href="">Fetures</a>
+                    <a class=" px-3 pt-20 text-lg tracking-widest" href="">Product</a>
+                    <a class=" px-3 pt-20 text-lg tracking-widest" href="">Reviews</a>
+                    <a class=" px-3 pt-20 text-lg tracking-widest" href="">Faq</a>
+                    <a class=" px-3 pt-20 text-lg tracking-widest" href="">Contact</a>
+                    <a class=" px-3 pt-20 text-lgtracking-widest" href=""><i
+                            class="fa-solid fa-bars  p-3 pt-0 text-2xl"></i>
+                </div></a>
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
+
+    <main>
+        <section class="creative-area-full">
+            <div class="creative-area bg-pink bg-cover bg-no-repeat"
+                style="background-image: url(img/heading-bg--1.jpg); margin-top: -126px;">
+                <div class="containar">
+                    <div class="creative-content-area flex flex-col md:flex-row sm:flex-row">
+                        <div class="creative-area-left pt-72 ps-40 text-white">
+                            <h3 class="italic text-4xl font-mono mb-11 px-20">We are the best creative agency</h3>
+                            <h2 class="font-sans text-6xl mb-14 px-20">We turn creative ideas into your business.</h2>
+                            <p class="font-serif text-lg px-20 pb-10">Lorem ipsum dolor sit am et, consec tetur adipi
+                                scing elit. Sed<br> sodales enim ut rhoncus lorem ipsum ese terds.</p>
+                            <div class="btn px-20 space-x-3">
+                                <button class="px-8 py-4 bg-pink rounded-full text-sm text-white font-sans font-semibold uppercase">our story</button>
+                                <button class="px-8 py-4 bg-purple rounded-full text-sm text-white font-sans font-semibold uppercase">read more</button>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="creative-content-area-right pt-40 pe-40">
-                        <img src="img/main-man.png" class="pe-20 h-screen" alt="">
+
+                        <div class="creative-content-area-right pt-40 pe-40">
+                            <img src="img/main-man.png" class="pe-20 h-screen" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-   </main>
+        </section>
+        <!-- creative agency section done -->        
+        <section class="creative-ideas-area-full">
+            <div class="creative-ideas-area bg-cover bg-no-repeat" style="background-image: url(img/main-bg-1.jpg);">
+                <div class="flex flex-col md:flex-row sm:flex-row px-60 justify-center items-center">
+                    <div class="creative-ideas-left">
+                        <h3 class="italic text-4xl font-mono pt-24 mb-11 px-20 text-gray-500 ">dream big inspire the world</h3>
+                        <h2 class="font-sans text-6xl mb-14 px-20 text-black">We turn creative ideas into bussines.</h2>
+                        <div class="flex space-x-8 primary-menu px-20 pb-4">
+                            <a href="" class="px-8 py-4 font-sans font-semibold text-gray-500 hover:bg-pink rounded-full hover:text-white uppercase">web design</a>
+                            <a href="" class="px-8 py-4 font-sans font-semibold text-gray-500 hover:bg-pink rounded-full hover:text-white uppercase">mobile app</a>
+                            <a href="" class="px-8 py-4 font-sans font-semibold text-gray-500 hover:bg-pink rounded-full hover:text-white uppercase">branding</a>
+                            <a href="" class="px-8 py-4 font-sans font-semibold text-white rounded-full bg-pink uppercase">branding</a>
+                            
+                        </div>
+                        <p  class="font-serif text-lg px-20 pb-10 text-gray-500">Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.Lorem ipsum dolor sit am et, consec tetur adipi scing elit. </p>
+                        <div class="px-20"><button class="px-8 py-4 bg-pink text-sm text-white font-sans font-semibold rounded-lg  shadow-lg shadow-pink-200 uppercase">read more</button></div>
+                    </div>
+                    <div class="creative-ideas-right">
+                        <img src="img/watch.png" alt="">
+                    </div>
+                </div>
+                <!-- completed project area start -->
+                <div class="project-complete-area flex" style="margin-top: 114px;">
+                    <!-- single completed  -->
+                    <div class="singlecompleted text-white bg-purple text-center" style="height: 500px; width: 620px; ">
+                        <img class="ms-64 mt-20 mb-10 ps-14" src="img/mike.png" alt="" >
+                        <h2 class="font-sans text-5xl mb-8 ps-28">500+</h2>
+                        <h3 class="ps-28 text-3xl">Successfully</h3>
+                        <h4 class="ps-28 text-xl mb-10">completed projects</h4>
+                        <p class="ps-36 text-slate-300 text-sm">Lorem ipsum dolor sit am et, consec tetur adipib<br> scing elit. Sed sodales enim ut rhoncus lorem<br> ipsum ese terds. </p>
+                    </div>
+                    <!-- single project end -->
+                    <!-- single completed  -->
+                    <div class="singlecompleted text-white bg-purple-200 text-center" style="height: 500px; width: 620px; ">
+                        <img class="ms-64 mt-20 mb-10" src="img/mike.png" alt="">
+                        <h2 class="font-sans text-5xl mb-8 ">500+</h2>
+                        <h3 class="text-3xl">Successfully</h3>
+                        <h4 class="text-xl mb-10">completed projects</h4>
+                        <p class="text-slate-300 text-sm">Lorem ipsum dolor sit am et, consec tetur adipib<br> scing elit. Sed sodales enim ut rhoncus lorem<br> ipsum ese terds. </p>
+                    </div>
+                    <!-- single project end -->
+                    <!-- single completed  -->
+                    <div class="singlecompleted text-white bg-purple text-center" style="height: 500px; width: 680px; ">
+                        <img class="ms-80 mt-20 mb-10 ps-4" src="img/mike.png" alt="">
+                        <h2 class="font-sans text-5xl mb-8 ps-28">500+</h2>
+                        <h3 class="ps-28 text-3xl">Successfully</h3>
+                        <h4 class="ps-28 text-xl mb-10">completed projects</h4>
+                        <p class="ps-36 text-slate-300 text-sm">Lorem ipsum dolor sit am et, consec tetur adipib<br> scing elit. Sed sodales enim ut rhoncus lorem<br> ipsum ese terds. </p>
+                    </div>
+                    <!-- single project end -->
+                </div>
+            </div>
+
+        </section>
+        
+    </main>
 </body>
+
 </html>
