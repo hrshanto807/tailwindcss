@@ -572,6 +572,11 @@ video {
   position: relative;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mb-11 {
   margin-bottom: 2.75rem;
 }
@@ -629,12 +634,63 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.ms-40 {
+  -webkit-margin-start: 10rem;
+          margin-inline-start: 10rem;
+}
+
+.ms-44 {
+  -webkit-margin-start: 11rem;
+          margin-inline-start: 11rem;
+}
+
+.me-6 {
+  -webkit-margin-end: 1.5rem;
+          margin-inline-end: 1.5rem;
+}
+
+.me-20 {
+  -webkit-margin-end: 5rem;
+          margin-inline-end: 5rem;
+}
+
+.ms-10 {
+  -webkit-margin-start: 2.5rem;
+          margin-inline-start: 2.5rem;
+}
+
+.ms-16 {
+  -webkit-margin-start: 4rem;
+          margin-inline-start: 4rem;
+}
+
+.me-16 {
+  -webkit-margin-end: 4rem;
+          margin-inline-end: 4rem;
+}
+
 .flex {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .h-screen {
   height: 100vh;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -657,6 +713,31 @@ video {
   gap: 0.75rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-x-5 {
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+
+.gap-y-5 {
+  row-gap: 1.25rem;
+}
+
+.gap-y-10 {
+  row-gap: 2.5rem;
+}
+
+.gap-y-20 {
+  row-gap: 5rem;
+}
+
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.75rem * var(--tw-space-x-reverse));
@@ -667,6 +748,18 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(2rem * var(--tw-space-x-reverse));
   margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-0 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0px * var(--tw-space-x-reverse));
+  margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .rounded-full {
@@ -690,6 +783,16 @@ video {
 .bg-purple-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(64 40 106 / var(--tw-bg-opacity));
+}
+
+.bg-gray-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .bg-cover {
@@ -757,6 +860,21 @@ video {
 .py-14 {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
+}
+
+.px-96 {
+  padding-left: 24rem;
+  padding-right: 24rem;
+}
+
+.px-48 {
+  padding-left: 12rem;
+  padding-right: 12rem;
+}
+
+.px-52 {
+  padding-left: 13rem;
+  padding-right: 13rem;
 }
 
 .pb-10 {
@@ -866,6 +984,50 @@ video {
 
 .pt-10 {
   padding-top: 2.5rem;
+}
+
+.ps-80 {
+  -webkit-padding-start: 20rem;
+          padding-inline-start: 20rem;
+}
+
+.ps-96 {
+  -webkit-padding-start: 24rem;
+          padding-inline-start: 24rem;
+}
+
+.ps-8 {
+  -webkit-padding-start: 2rem;
+          padding-inline-start: 2rem;
+}
+
+.ps-16 {
+  -webkit-padding-start: 4rem;
+          padding-inline-start: 4rem;
+}
+
+.pe-16 {
+  -webkit-padding-end: 4rem;
+          padding-inline-end: 4rem;
+}
+
+.pe-52 {
+  -webkit-padding-end: 13rem;
+          padding-inline-end: 13rem;
+}
+
+.ps-56 {
+  -webkit-padding-start: 14rem;
+          padding-inline-start: 14rem;
+}
+
+.ps-60 {
+  -webkit-padding-start: 15rem;
+          padding-inline-start: 15rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
 }
 
 .text-center {
@@ -989,6 +1151,11 @@ video {
   background-color: rgb(244 34 103 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-purple-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(64 40 106 / var(--tw-bg-opacity));
+}
+
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -998,16 +1165,30 @@ video {
   .sm\:flex-row {
     flex-direction: row;
   }
+
+  .sm\:flex-col {
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 768px) {
   .md\:flex-row {
     flex-direction: row;
   }
+
+  .md\:flex-col {
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 1024px) {
   .lg\:flex {
     display: flex;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:flex-row {
+    flex-direction: row;
   }
 }
